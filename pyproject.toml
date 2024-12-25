@@ -1,0 +1,13 @@
+[project]
+dependencies = [
+    "my-package",
+]
+name = "my-workspace"
+requires-python = "==3.13.1"
+version = "0.1.0"
+
+[tool.uv.sources]
+my-package = {workspace = true}
+
+[tool.uv.workspace]
+members = ["packages/*"]
